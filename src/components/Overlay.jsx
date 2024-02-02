@@ -31,8 +31,8 @@ export const Overlay = () =>{
                 progress === 100 && (
                     <div className={`intro ${play ?"intro--disappear":""}`}>
                         <div className="loader-header">
-                        <img className="logo" src="./text-1702194921094.png" />
-                        <p className="quote">Where passion meets <span style={{color:"#3535cc"}}>pride</span></p>
+                        <img className="logo" src="./text-1706897873625.png" />
+                        
                     </div>
                     
                          
@@ -46,10 +46,7 @@ export const Overlay = () =>{
                     }}
                     >Explore</button>
                      
-                    <button
-                    className="registration">
-                        Pre-Registration
-                    </button>
+                   
             </div>
                 )}
            <div className={`outro ${end ? "outro--appear" : ""} ${isVisible ? '' : 'outro--disappear'}`}>

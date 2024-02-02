@@ -116,18 +116,6 @@ body, html {
   /* font-family: 'Permanent Marker', cursive; */
 }
 
-.quote{
-  color:rgb(156, 156, 156);
-  font-size:20px;
-  font-family: 'Permanent Marker', cursive;
-  padding: 0;
-  margin: 0;
-  transform: translateY(-50%);
-  position: absolute;
-  top: 55vh;
-  animation: fadeUp 2.4s ease-in-out;
-  transition: all 2s ease-in-out;
-}
 
 .loader-header{
   display: flex;
@@ -166,14 +154,11 @@ body, html {
 }
 
 .explore {
-  padding: 1rem 0rem;
-  width: 290px;
   border: none;
   font-family: "DM Serif Display", serif;
-  font-size: 1.25rem;
   letter-spacing: 0.25rem;
   color: #3535cc;
-  border-radius: 32px;
+  border-radius: 220px;
   cursor: pointer;
   display: inline-block;
   display: inline-block;
@@ -185,54 +170,18 @@ body, html {
   opacity: 0;
 }
 
-.revisit{
-  padding: 1rem 0rem;
-  width: 290px;
-  border: none;
-  font-family: "DM Serif Display", serif;
-  font-size: 1.25rem;
-  letter-spacing: 0.25rem;
-  color: #3535cc;
-  border-radius: 32px;
-  cursor: pointer;
- 
-  display: inline-block;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-}
+
 
 .fade-out {
   opacity: 0;
   transition: opacity 0.4s; /* Set opacity to 0 to make it invisible */
 }
 
-.registration{
-  padding: 1rem 2rem;
-  width: 290px;
-  border: none;
-  font-family: "DM Serif Display", serif;
-  font-size: 1.25rem;
-  letter-spacing: 0.25rem;
+
+.explore:hover{
   color: white;
-  background-color: #3535cc;
-  border-radius: 32px;
-  cursor: pointer;
-  display: inline-block;
-  margin-top: 40px;
-  display: inline-block;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  transition: 0.42s ease-in-out;
-  animation: fadeIn 2.4s ease-in-out 2s forwards;
-  opacity: 0;
 }
-
-/* .explore:hover{
-  color: transparent;
-} */
-
+/* 
 .explore::after {
   position: absolute;
   top: 0;
@@ -242,18 +191,18 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: transparent; /* Set a background color if needed */
+  background-color: transparent;
   opacity: 1;
   
-}
+} */
 
 /* .explore:hover::after {
 
-  content: 'Coming Soon';
+  content: 'Explore';
  
   color: white;
   transition: content 5s;
-}
+} */
 
 .explore:hover:before {
   width: 200%;
@@ -273,7 +222,7 @@ body, html {
   transition: 0.42s ease-in-out;
   z-index: -1;
   transform: translateX(-50%) translateY(50%);
-} */
+} 
 
 
 .intro--disappear .explore {
@@ -392,6 +341,10 @@ body, html {
   }
   .explore{
     margin-top: 180px;
+    width: 240px;
+    padding: 1rem 0rem;
+    font-size: 1.25rem;
+   
   }
   .quote{
     margin-top: 20px;;
@@ -407,6 +360,9 @@ body, html {
   }
   .explore{
     margin-top: 180px;
+    width: 240px;
+    padding: 1rem 0rem;
+    font-size: 1.25rem;
   }
 }
 @media (min-width:767px){
@@ -419,10 +375,13 @@ body, html {
 }
 @media (min-width:1024px){
   .logo{
-    width:65%
+    width:75%
   }
   .explore{
-    margin-top: 380px;
+    margin-top: 330px;
+    width: 400px;
+    padding: 1.2rem 0rem;
+    font-size: 2rem;
   }
   .quote{
     top:40vh;
