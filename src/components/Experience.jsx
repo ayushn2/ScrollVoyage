@@ -6,23 +6,17 @@ import * as THREE from "three";
 import { Background } from "./Background";
 import { Cloud } from "./Cloud";
 import { Lamp } from "./Lamp";
-import { Html} from '@react-three/drei';
 import { Text } from "@react-three/drei";
 import { Vector3 } from "three";
-import { TextSection } from "./TextSection";
-import { Billboard } from "@react-three/drei";
+
 import { Image,Stars } from "@react-three/drei";
-import { Text3D } from "@react-three/drei";
+
 import { fadeOnBeforeCompileFlat } from "../utils/fadeMaterial"
 import { usePlay } from "../context/Play";
-import {Cube} from "./Cubes"
-import { Euler } from "three";
 import { useLayoutEffect } from "react";
 import gsap from "gsap";
-import { Remains } from "./Remains";
 import { Bench } from "./Bench";
-import { Bench_1 } from "./Bench-1";
-import { Human_Sorceror } from "./Human_sorceror";
+
 import { Hot_air_balloon } from "./Hot_air_balloon";
 
 
@@ -119,77 +113,7 @@ const textSections = useMemo(()=>{
         scale: new Vector3(8, 8, 5),
         position: new Vector3(11, 0, -22),
       },
-      // FIRST POINT
-      // {
-      //   scale: new Vector3(4, 4, 4),
-      //   position: new Vector3(
-      //     curvePoints[1].x + 10,
-      //     curvePoints[1].y - 4,
-      //     curvePoints[1].z + 64
-      //   ),
-      // },
-      // {
-      //   scale: new Vector3(3, 3, 3),
-      //   position: new Vector3(
-      //     curvePoints[1].x - 20,
-      //     curvePoints[1].y + 4,
-      //     curvePoints[1].z + 28
-      //   ),
-      //   rotation: new Euler(0, Math.PI / 7, 0),
-      // },
-      // {
-      //   rotation: new Euler(0, Math.PI / 7, Math.PI / 5),
-      //   scale: new Vector3(5, 5, 5),
-      //   position: new Vector3(
-      //     curvePoints[1].x - 13,
-      //     curvePoints[1].y + 4,
-      //     curvePoints[1].z - 62
-      //   ),
-      // },
-      // {
-      //   rotation: new Euler(Math.PI / 2, Math.PI / 2, Math.PI / 3),
-      //   scale: new Vector3(5, 5, 5),
-      //   position: new Vector3(
-      //     curvePoints[1].x + 54,
-      //     curvePoints[1].y + 2,
-      //     curvePoints[1].z - 82
-      //   ),
-      // },
-      // {
-      //   scale: new Vector3(5, 5, 5),
-      //   position: new Vector3(
-      //     curvePoints[1].x + 8,
-      //     curvePoints[1].y - 14,
-      //     curvePoints[1].z - 22
-      //   ),
-      // },
-      // SECOND POINT
-      // {
-      //   scale: new Vector3(3, 3, 3),
-      //   position: new Vector3(
-      //     curvePoints[2].x + 6,
-      //     curvePoints[2].y - 7,
-      //     curvePoints[2].z + 50
-      //   ),
-      // },
-      // {
-      //   scale: new Vector3(2, 2, 2),
-      //   position: new Vector3(
-      //     curvePoints[2].x - 2,
-      //     curvePoints[2].y + 4,
-      //     curvePoints[2].z - 26
-      //   ),
-      // },
-      // {
-      //   scale: new Vector3(4, 4, 4),
-      //   position: new Vector3(
-      //     curvePoints[2].x + 12,
-      //     curvePoints[2].y + 1,
-      //     curvePoints[2].z - 86
-      //   ),
-      //   rotation: new Euler(Math.PI / 4, 0, Math.PI / 3),
-      // },
-      // THIRD POINT
+     
       {
         scale: new Vector3(7, 7, 7),
         position: new Vector3(
@@ -556,21 +480,21 @@ rotateY={Math.PI/2}
 
       {/* Text */}
 
-     <group position={window.innerWidth > window.innerHeight ?
-        [-4,2,-85]
+     {/* <group position={window.innerWidth > window.innerHeight ?
+        [4,3,-85]
       :
         [-1.4,2,-85]
       }
       rotateY={Math.PI}>
-      {/* <Text color="white"
+      <Text color="white"
                 anchorx={"left"}
                 anchorY="center"
                 position-y={0.25}
                
-                fontSize={1}
+                fontSize={0.6}
                 maxWidth={6.5}
                 font={"./fonts/DMSerifDisplay-Regular.ttf"}>
-                CONTACT US
+                Hey, It's Ayush
                     <meshStandardMaterial
                     color={"white"}
                     onBeforeCompile={fadeOnBeforeCompileFlat}/>
@@ -580,17 +504,114 @@ rotateY={Math.PI/2}
       color="white"
       anchorx={"left"}
       anchorY="top"
-      position-y={-1}
-      fontSize={0.2}
-      maxWidth={2.5}
-      font={"./fonts/Inter-Regular.ttf"}>
-         Person-1     9282 9820 
-         Person-2     0230 9124
-         ig.ignus.com 
+      position-y={-0.8}
+      fontSize={0.5}
+      maxWidth={1.8}
+      font={"./fonts/DMSerifDisplay-Regular.ttf"}>
+         I Design
+         I Create
+         I Solve Problems
          <meshStandardMaterial
                     color={"white"}
                     onBeforeCompile={fadeOnBeforeCompileFlat}/>
-      </Text> */}
+      </Text>
+     </group> */}
+     <group 
+     position={window.innerWidth > window.innerHeight ?
+        [4,3,-85]
+      :
+        [-1.4,2,-85]
+      }>
+     <Text
+      color="white"
+      anchorx={"left"}
+      anchorY="top"
+      position-y={-0.8}
+      fontSize={1.5}
+      maxWidth={9.8}
+      font={"./fonts/DMSerifDisplay-Regular.ttf"}>
+         I Resolve
+         
+         <meshStandardMaterial
+                    color={"white"}
+                    onBeforeCompile={fadeOnBeforeCompileFlat}/>
+      </Text>
+     </group>
+     <group 
+     position={window.innerWidth > window.innerHeight ?
+        [-4,3,-55]
+      :
+        [-1.4,2,-85]
+      }>
+     <Text
+      color="white"
+      anchorx={"left"}
+      anchorY="top"
+      position-y={-0.8}
+      fontSize={1.5}
+      maxWidth={9.8}
+      font={"./fonts/DMSerifDisplay-Regular.ttf"}>
+         I Create
+         
+         <meshStandardMaterial
+                    color={"white"}
+                    onBeforeCompile={fadeOnBeforeCompileFlat}/>
+      </Text>
+     </group>
+
+     <group 
+     position={window.innerWidth > window.innerHeight ?
+        [4,3,-25]
+      :
+        [-1.4,2,-85]
+      }>
+     <Text
+      color="white"
+      anchorx={"left"}
+      anchorY="top"
+      position-y={-0.8}
+      fontSize={1.5}
+      maxWidth={9.8}
+      font={"./fonts/DMSerifDisplay-Regular.ttf"}>
+         I Design
+         
+         <meshStandardMaterial
+                    color={"white"}
+                    onBeforeCompile={fadeOnBeforeCompileFlat}/>
+      </Text>
+     </group>
+
+     <group 
+     position={window.innerWidth > window.innerHeight ?
+        [0,5,-110]
+      :
+        [-1.4,2,-85]
+      }>
+     <Text
+      color="white"
+      anchorx={"left"}
+      anchorY="top"
+      position-y={-0.8}
+      fontSize={1.5}
+      maxWidth={9.8}
+      font={"./fonts/DMSerifDisplay-Regular.ttf"}>
+         Contact Me
+         
+         <meshStandardMaterial
+                    color={"white"}
+                    onBeforeCompile={fadeOnBeforeCompileFlat}/>
+      </Text>
+      <Text  color="white"
+      anchorx={"left"}
+      anchorY="top"
+      position-y={-2.8}
+      fontSize={0.5}
+      maxWidth={1.8}>
+        iayush.n2@gmail.com
+        <meshStandardMaterial
+                    color={"white"}
+                    onBeforeCompile={fadeOnBeforeCompileFlat}/>
+      </Text>
      </group>
      <Float floatIntensity={10} rotationIntensity={0.2}>
      <Hot_air_balloon 
@@ -662,12 +683,12 @@ rotateY={Math.PI/2}
       {/* CLOUDS */}
       <Cloud opacity={1} scale={[2, 2, 2.5]} position={[-10.8, -1.2, -28]} />
         {/* <Float floatIntensity={10} rotationIntensity={0.2}> */}
-        <Cloud 
+        {/* <Cloud 
         opacity={1}  
         scale={[1, 1, 2]} 
-        // position={[4.3, -0.4, -15]} 
+        
         position={[4.3, 0.5, -15]}
-        rotation-y={Math.PI}/>
+        rotation-y={Math.PI}/> */}
         {/* </Float> */}
       
       
@@ -686,7 +707,7 @@ rotateY={Math.PI/2}
         position={[-3,-0.5,-50]}
       /> 
 
-      <Cloud opacity={1} scale={[0.5, 0.5, 0.5]} position={[-1, 1, -53]} />
+      <Cloud opacity={1} scale={[0.5, 0.5, 0.5]} position={[-1, 1, -63]} />
      {/* <Cloud opacity={0.5} scale={[0.8, 0.8, 0.8]} position={[0, 1, -100]} /> */}
      
     </>

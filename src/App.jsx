@@ -1,14 +1,10 @@
 import { Canvas } from "@react-three/fiber";
 import { Experience } from "./components/Experience";
 import { Fisheye, ScrollControls } from "@react-three/drei";
-import { EffectComposer } from "@react-three/postprocessing";
-import { Noise } from "lamina";
+
 import { Overlay } from "./components/Overlay";
 import { usePlay } from "./context/Play";
-import  Navbar  from "./components/Navbar"
-import { Sky } from "@react-three/drei";
-import { Events } from "./components/path_nav/Events";
-import { Theme } from "./components/path_nav/Theme";
+
 
 function App() {
 
@@ -50,7 +46,6 @@ function App() {
       </Canvas>
      
       <Overlay/>
-      <Navbar/>
       
     </>
   );

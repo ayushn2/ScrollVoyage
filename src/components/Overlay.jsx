@@ -1,8 +1,7 @@
 import { useProgress } from "@react-three/drei"
 import { usePlay } from "../context/Play";
 import { useEffect, useState } from "react";
-import Nav from "./Nav";
-import "./Nav.css"
+
 
 export const Overlay = () =>{
 
