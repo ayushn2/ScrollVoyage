@@ -541,7 +541,7 @@ rotateY={Math.PI/2}
      position={window.innerWidth > window.innerHeight ?
         [-4,3,-55]
       :
-        [-1.4,2,-85]
+        [-4,3,-55]
       }>
      <Text
       color="white"
@@ -563,7 +563,7 @@ rotateY={Math.PI/2}
      position={window.innerWidth > window.innerHeight ?
         [4,3,-25]
       :
-        [-1.4,2,-85]
+        [4,3,-25]
       }>
      <Text
       color="white"
@@ -585,7 +585,7 @@ rotateY={Math.PI/2}
      position={window.innerWidth > window.innerHeight ?
         [0,5,-110]
       :
-        [-1.4,2,-85]
+        [0,5,-110]
       }>
      <Text
       color="white"
