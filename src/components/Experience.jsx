@@ -587,7 +587,7 @@ rotateY={Math.PI/2}
       :
         [0,5,-110]
       }>
-     <Text
+     {/* <Text
       color="white"
       anchorx={"left"}
       anchorY="top"
@@ -600,8 +600,8 @@ rotateY={Math.PI/2}
          <meshStandardMaterial
                     color={"white"}
                     onBeforeCompile={fadeOnBeforeCompileFlat}/>
-      </Text>
-      <Text  color="white"
+      </Text> */}
+      {/* <Text  color="white"
       anchorx={"left"}
       anchorY="top"
       position-y={-2.8}
@@ -611,7 +611,7 @@ rotateY={Math.PI/2}
         <meshStandardMaterial
                     color={"white"}
                     onBeforeCompile={fadeOnBeforeCompileFlat}/>
-      </Text>
+      </Text> */}
      </group>
      <Float floatIntensity={10} rotationIntensity={0.2}>
      <Hot_air_balloon 
